@@ -1,4 +1,4 @@
-package jcolonia.daw2023.quiniela;
+package quiniela;
 
 import static java.lang.System.out;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * @see ElementoPartido1X2
  * 
  * @version 1.1 (20240502000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @author <a>Jorge Vazquez Arribas</a>
  */
 public class ControladorQuiniela1X2 {
 	/** Nombre del archivo de datos para impotación/exportación. */
@@ -31,8 +31,10 @@ public class ControladorQuiniela1X2 {
 
 	/**
 	 * Bucle principal ligado al menú de entrada.
+	 * @throws Partido1X2Exception excepcion
+	 * @throws DatoPartido1X2Exception 
 	 */
-	public void buclePrincipal() {
+	public void buclePrincipal() throws DatoPartido1X2Exception, Partido1X2Exception {
 		VistaMenú menú;
 		int opción;
 		int n = 0;
@@ -76,8 +78,10 @@ public class ControladorQuiniela1X2 {
 	/**
 	 * Crea un partido vacío para rellenarlo y eventualmente almacenarlo. El partido
 	 * se envía al diálogo de altas, y si este responde positivamente se almacena.
+	 * @throws Partido1X2Exception 
+	 * @throws DatoPartido1X2Exception 
 	 */
-	private void alta() {
+	private void alta() throws DatoPartido1X2Exception, Partido1X2Exception {
 		ElementoPartido1X2 nuevo;
 
 		VistaDiálogoAltaPartido1X2 dlg;

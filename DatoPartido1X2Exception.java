@@ -1,11 +1,11 @@
-package jcolonia.daw2023.quiniela;
+package quiniela;
 
 /**
  * Excepción usada en la aplicación «Quiniela 1X2». Alerta generalmente de datos
  * incorrectos no válidos.
  * 
  * @version 1.1 (20240502000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @author <a>Jorge Vazquez Arribas</a>
  */
 public class DatoPartido1X2Exception extends Exception {
 	/**

@@ -1,4 +1,4 @@
-package jcolonia.daw2023.quiniela;
+package quiniela;
 
 import static java.lang.System.out;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Utilidades básicas para interface en consola de texto.
  * 
  * @version 1.1 (20240502000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @author <a>Jorge Vazquez Arribas</a>
  */
 public class VistaGeneral {
 	/** Secuencia de escape ANSI para activar el color rojo. */

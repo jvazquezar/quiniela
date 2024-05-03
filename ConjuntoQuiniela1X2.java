@@ -1,4 +1,4 @@
-package jcolonia.daw2023.quiniela;
+package quiniela;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.Vector;
  * Modelo: Colección básica de resultados deportivos en formato de quiniela 1X2.
  * 
  * @version 1.1 (20240502000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @author <a>Jorge Vazquez Arribas</a>
  */
 public class ConjuntoQuiniela1X2 {
 	/**
@@ -93,8 +93,9 @@ public class ConjuntoQuiniela1X2 {
 	 * @see ElementoPartido1X2#toStringCSV()
 	 * 
 	 * @return la lista de textos correspondiente
+	 * @throws Partido1X2Exception excepcion
 	 */
-	public List<String> generarListadoCSV() {
+	public List<String> generarListadoCSV() throws Partido1X2Exception {
 		List<String> listaTextos;
 		listaTextos = new ArrayList<String>(lista.size());
 
